@@ -1,0 +1,40 @@
+@use "./variables" as *;
+@use "./mixins" as *;
+
+.series-card {
+  @include card-style;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  h2 {
+    color: $accent-color;
+    min-height: 60px;
+  }
+
+  p:not([class^="genre-"]) {
+  color: $text-color;
+}
+}
+
+.series-card-link {
+  text-decoration: none;
+}
+
+@each $genre, $color in $genres {
+  .genre-#{$genre} {
+    color: $color;
+    font-weight: bold;
+  }
+}

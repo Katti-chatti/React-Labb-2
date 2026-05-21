@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.button-base, .delete-button, .edit-button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-button {
+  background-color: #3b82f6;
+}
+
+.delete-button {
+  background-color: #ef4444;
+}
+
+.series-card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.series-card:hover {
+  transform: scale(1.03);
+}
+.series-card img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.series-card h2 {
+  color: #38bdf8;
+  min-height: 60px;
+}
+.series-card p:not([class^=genre-]) {
+  color: #f8fafc;
+}
+
+.series-card-link {
+  text-decoration: none;
+}
+
+.genre-crime {
+  color: #e23535;
+  font-weight: bold;
+}
+
+.genre-scifi {
+  color: #18d150;
+  font-weight: bold;
+}
+
+.genre-fantasy {
+  color: #49c7f8;
+  font-weight: bold;
+}
+
+.genre-thriller {
+  color: #7b10b9;
+  font-weight: bold;
+}
+
+.genre-horror {
+  color: #960052;
+  font-weight: bold;
+}
+
+.genre-action {
+  color: #eeae24;
+  font-weight: bold;
+}
+
+.series-page {
+  width: 100%;
+}
+.series-page h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.series-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+@media (max-width: 1200px) {
+  .series-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .series-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .series-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.details-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.series-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+}
+.series-form input,
+.series-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+.series-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.series-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #38bdf8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.series-form button:hover {
+  opacity: 0.9;
+}/*# sourceMappingURL=main.css.map */

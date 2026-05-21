@@ -1,0 +1,19 @@
+@use "./mixins" as *;
+
+.button-base {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.edit-button {
+  @extend .button-base;
+  @include button-style(#3b82f6);
+}
+
+.delete-button {
+  @extend .button-base;
+  @include button-style(#ef4444);
+}

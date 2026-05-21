@@ -1,0 +1,45 @@
+@use "./mixins" as *;
+
+.series-page {
+  width: 100%;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.series-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.details-buttons {
+  @include flex-center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.search-input {
+  width: 400px;
+  padding: 12px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: center;
+}

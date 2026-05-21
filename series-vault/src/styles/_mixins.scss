@@ -1,0 +1,22 @@
+@use "./variables" as *;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style($bg-color) {
+  background-color: $bg-color;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+@mixin card-style {
+  background-color: $card-bg;
+  border-radius: 12px;
+  padding: 20px;
+}
