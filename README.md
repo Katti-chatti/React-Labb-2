@@ -4,3 +4,19 @@ Man kan också söka på serier baserat på namn eller genre (med useDefferedVal
 Hemsidan är ganska tom och tråkig och det skulle jag undvika om det inte var för de 3 routing kraven - annars hade jag haft serielistan som hemsidan och sen en "add series" route. Jag hann inte med ett favoritsystem/lista som kunde ha vart den tredje routingen.
 
 Jag vill i framtiden lägga till en "has watched" - "watching..." toggle samt favoriter, sortering och localstorage.
+
+English summary:
+TV series manager built with:
+- React
+- TypeScript
+- Vite
+- Express
+- Axios
+- SCSS
+- Multer
+
+Features:
+- CRUD
+- Search
+- Upload posters
+- Semi Responsive layout
